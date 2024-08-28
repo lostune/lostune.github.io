@@ -18,4 +18,30 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>技巧</title>
+    <url>/2024/07/04/%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Solitude</category>
+      </categories>
+      <tags>
+        <tag>网站建设</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试</title>
+    <url>/2024/08/21/%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<!----------[Butterfly] (https://butterfly.js.org/)------->
+
+<p>测试一下吧</p>
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
+        <tag>测试</tag>
+      </tags>
+  </entry>
 </search>
