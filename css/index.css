@@ -8855,7 +8855,7 @@ div#banners .bannerText {
   }
 }
 [data-theme=dark] {
-  --efu-theme: #4f4f4f;
+  --efu-theme: #483d8b;
   --efu-theme-op: rgba(242,185,75,0.137);
   --efu-theme-op-deep: rgba(242,185,75,0.867);
   --efu-theme-none: rgba(242,185,75,0);
