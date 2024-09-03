@@ -1,3 +1,3 @@
-var posts=["2024/08/29/Hello-World/"];function toRandomPost(){
+var posts=["2024/08/29/Hello-World/","2024/09/04/常用数学公式/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
