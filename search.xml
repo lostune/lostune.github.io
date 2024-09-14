@@ -83,4 +83,35 @@ e^{x}=1+x+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+o\left(x^{3}\right)\\</script><scrip
         <tag>高等数学</tag>
       </tags>
   </entry>
+  <entry>
+    <title>秋招经历</title>
+    <url>/2024/09/14/%E7%A7%8B%E6%8B%9B%E7%BB%8F%E5%8E%86/</url>
+    <content><![CDATA[<!----------[Butterfly] (https://butterfly.js.org/)------->
+<p>最近投了些企业，记录一下秋招的经历</p>
+<p>其实从暑假开始就开始投了，往年都说金九银十，但今年都说金八银九。但实际上发现九月开始的企业也很多。</p>
+<p>北森人才测评，这玩意是真讨厌😡</p>
+<h2 id="oppo"><a href="#oppo" class="headerlink" title="oppo"></a>oppo</h2><p>投了通信协议工程师，邀请我转岗到制造工艺。不是我不想转，我不会呀😭拒绝了第二天初筛挂了</p>
+<h2 id="华为"><a href="#华为" class="headerlink" title="华为"></a>华为</h2><p>HR看了我的简历。感觉过不了，后来撤了。欧洲小镇很漂亮。</p>
+<h2 id="TCL"><a href="#TCL" class="headerlink" title="TCL"></a>TCL</h2><p>一开始乱投的，但也是目前走得最快的。它好像挺喜欢我们院的学生。我的岗比较特殊，后来又转了。舍友同岗已经过了，我还在泡池子说是48h出结果，但是也没出。一开始打算硬件，笔试考的电分，比较基础的题目，KCL、KVL，截止失真饱和失真。</p>
+<p><img src="https://pic1.zhimg.com/80/v2-77fa5aed13f5a95f687ad95dc37c7758_720w.png" alt="tcl"></p>
+<p>面试临时转了图像处理。先自我介绍。问了印象最深的实验。问项目，问了不了解图像处理。问了C语言。指针和数组的区别、全局变量和局部变量的区别、堆和栈的区别；问了DSP，说了图像处理的大作业。问数字滤波器、傅里叶变换。还有一些忘了，最后反问了部门做什么产品。</p>
+<p>总之答得挺差的，也仓促。大部分都说一点但说不全。</p>
+<h2 id="华勤"><a href="#华勤" class="headerlink" title="华勤"></a>华勤</h2><p>教师节跟初中班主任聊了会，说松山湖还有什么企业。就说到华勤，顺便投了运维。测评做了，后边就没动静了。</p>
+<h2 id="vivo"><a href="#vivo" class="headerlink" title="vivo"></a>vivo</h2><p>做了测评</p>
+<h2 id="京东"><a href="#京东" class="headerlink" title="京东"></a>京东</h2><p>9月14日笔试，还请了假。投的运维。看到说明有一道题要用bash就感觉不对劲了。果然考的大部分都不会……考docker、数据库、tcp、arp、linux、python……考的挺多挺杂，大部分都不会。编程是一个分割数组求两部分之和之积的最小值。我遍历做的，25%通过，超时了。算法不行，我也不会改。bash的题更是完全不会做。寄了。果然我学的还是太浅。</p>
+<h2 id="荣耀"><a href="#荣耀" class="headerlink" title="荣耀"></a>荣耀</h2><p>听了宣讲，我还被拍照放公众号上了。简历待处理</p>
+<h2 id="法雷奥"><a href="#法雷奥" class="headerlink" title="法雷奥"></a>法雷奥</h2><p>投了没后续</p>
+<h2 id="中国移动（广东）"><a href="#中国移动（广东）" class="headerlink" title="中国移动（广东）"></a>中国移动（广东）</h2><p>网申投了省公司和东莞分公司。听了宣讲，还跟hr聊了会，hr是个声音很温柔的介于阿姨和姐姐间的人，就一看就知道是温柔的广东女性。不过线下也没啥用，还是要网申。10月26笔试好像是。</p>
+<h2 id="海信"><a href="#海信" class="headerlink" title="海信"></a>海信</h2><p>测评做了后是英语AI面。就读一小段短文，说一个 memorable holiday。很快就结束了。14号打电话给我说前面的通过了，问意向、对公司的了解、为什么投他们、期望薪资，说中秋以后加微信安排面试，感觉是投的里面反馈最好的。</p>
+<h2 id="牧原"><a href="#牧原" class="headerlink" title="牧原"></a>牧原</h2><p>应届生技术岗20k起，给得很高不过没投这个。养猪的，看到让应届生喂猪，起得比猪早睡的比猪晚，小红书和知乎搜一下都很劝退。</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>经历</tag>
+        <tag>秋招</tag>
+        <tag>工作</tag>
+      </tags>
+  </entry>
 </search>
