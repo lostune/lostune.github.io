@@ -124,7 +124,8 @@ f\left(x\right)=f\left(0\right)+f'\left(0\right)x+\frac{f''\left(0\right)}{2!}x^
 \arcsin x=x+\frac{x^{3}}{3!}+o\left(x^{3}\right)\\</script><script type="math/tex; mode=display">
 \tan x=x+\frac{x^{3}}{3}+o\left(x^{3}\right)\\</script><script type="math/tex; mode=display">
 e^{x}=1+x+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+o\left(x^{3}\right)\\</script><script type="math/tex; mode=display">
-\quad\left(1+x\right)^{\alpha}=1+\alpha x+\frac{\alpha\left(\alpha-1\right)}{2!}x^{2}+o\left(x^{2}\right)</script><hr>
+\quad\left(1+x\right)^{\alpha}=1+\alpha x+\frac{\alpha\left(\alpha-1\right)}{2!}x^{2}+o\left(x^{2}\right)</script><script type="math/tex; mode=display">
+ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)\\</script><hr>
 <h2 id="基本求导公式"><a href="#基本求导公式" class="headerlink" title="基本求导公式"></a>基本求导公式</h2><script type="math/tex; mode=display">
 (x^{a})^{\prime}=\alpha x^{a-1}\left(\alpha\text{ 为常数 }\right)\\</script><script type="math/tex; mode=display">
 \quad(a^{x})^{\prime}=a^{x}\ln a(a>0,a\neq1)\\</script><script type="math/tex; mode=display">
