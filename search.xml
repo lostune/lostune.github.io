@@ -143,7 +143,8 @@ ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)\\</script><hr>
 \left(\sec x\right)^{\prime}=\sec x\tan x \\</script><script type="math/tex; mode=display">
 \left(\csc x\right)^{\prime}=-\csc x\cot x \\</script><script type="math/tex; mode=display">
 \left[\ln\left(x+\sqrt{x^{2}+1}\right)\right]^{\prime}=\frac{1}{\sqrt{x^{2}+1}} \\</script><script type="math/tex; mode=display">
-\left[\ln\left(x+\sqrt{x^{2}-1}\right)\right]^{\prime}=\frac{1}{\sqrt{x^{2}-1}}</script><hr>
+\left[\ln\left(x+\sqrt{x^{2}-1}\right)\right]^{\prime}=\frac{1}{\sqrt{x^{2}-1}}</script><script type="math/tex; mode=display">
+\int\sqrt{1+x^2}dx=\frac{1}{2}x\sqrt{1+x^2}+\frac{1}{2}\ln|x+\sqrt{1+x^2}|+C</script><hr>
 <h2 id="三角函数"><a href="#三角函数" class="headerlink" title="三角函数"></a>三角函数</h2><hr>
 <div class="tip warning"><p>hexo 的公式渲染是真的难用！</p>
 </div>
