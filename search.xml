@@ -390,6 +390,15 @@ ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)\\</script><hr>
               <p>最近《情歌》很火，其实这首也很好听呀。整首的词都很不错，有浓厚的西域色彩。</p>
               </div>
             </details>
+<!-----
+<meting-js
+    name="倾听我"
+    artist="林心如"
+    url="/倾听我.mp3"
+    cover="https://p3fx.kgimg.com/stdmusic/240/20160909/20160909071331554736.jpg"
+    lrcType="1"
+    lrc="lstm.lrc">
+    --->
 ]]></content>
       <categories>
         <category>想法</category>
