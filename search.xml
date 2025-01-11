@@ -408,4 +408,48 @@ ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)\\</script><hr>
         <tag>杂谈</tag>
       </tags>
   </entry>
+  <entry>
+    <title>anaconda、tensorflow和pytorch的配置和使用问题</title>
+    <url>/2025/01/11/anaconda%E3%80%81tensorflow%E5%92%8Cpytorch%E7%9A%84%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<!----------[Butterfly] (https://butterfly.js.org/)------->
+<h2 id="安装conda"><a href="#安装conda" class="headerlink" title="安装conda"></a>安装conda</h2><p><strong>先安装anaconda，不用装python，如果已经安装最好卸了</strong></p>
+<p><a href="https://blog.csdn.net/weixin_46334272/article/details/135302195">Anaconda安装（最新图文版）_anaconda安装包-CSDN博客</a></p>
+<p><a href="https://blog.csdn.net/qq_38913351/article/details/141088718">安装Anaconda后，在cmd中输入conda —version后，显示‘conda‘ 不是内部或外部命令，也不是可运行的程序或批处理文件。_conda —version不是内部或外部命令-CSDN博客</a></p>
+<h2 id="查看cuda"><a href="#查看cuda" class="headerlink" title="查看cuda"></a>查看cuda</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">nvidia-smi</span><br></pre></td></tr></table></figure>
+<h2 id="安装pytorch"><a href="#安装pytorch" class="headerlink" title="安装pytorch"></a>安装pytorch</h2><p><a href="https://blog.csdn.net/MCYZSF/article/details/116525159">安装PyTorch详细过程_pytorch安装-CSDN博客</a></p>
+<p><a href="https://blog.csdn.net/qq_43596278/article/details/136305903">2024最新超详细无痛安装PyTorch，包括下载地址、环境配置与各种避坑指南_pytorch下载教程-CSDN博客</a></p>
+<p>CUDA11.6版本及以后添加镜像源，以11.8为例</p>
+<p>注意安装前要在anaconda具体的环境装，不要装在base里，这样我们具体的环境使用不了的。</p>
+<p>输入<code>conda activate 环境名称</code></p>
+<p>这个时候命令行的前面的括号里是我们具体的环境的名称。</p>
+<p>□ 首先添加清华镜像源（也可以自己添加其他镜像源）：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config --set show_channel_urls yes</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/win-64/</span><br></pre></td></tr></table></figure>
+<p>□ 然后输入命令行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c nvidia</span><br></pre></td></tr></table></figure>
+<p>此时在jupyter notebook没有可以选择的环境，需要在conda安装一个工具</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda install ipykernel</span><br></pre></td></tr></table></figure>
+<p>如何就可以在jupyter notebook选择了</p>
+<p><img src="../../static/imgs/image-20250111172230803.png" alt="image-20250111172230803"></p>
+<p>（<del>请忽略我打错的vision</del>）</p>
+<h2 id="安装tensorflow"><a href="#安装tensorflow" class="headerlink" title="安装tensorflow"></a>安装tensorflow</h2><p><a href="https://blog.csdn.net/weixin_46446479/article/details/144476401">tensorflow gpu版安装（直接anaconda虚拟环境中配置cuda，无需主机安装cuda、cudnn）_安装tensorflowgpu-CSDN博客</a></p>
+<p>上<a href="[Build from source on Windows  | TensorFlow](https://tensorflow.google.cn/install/source_windows">官网</a>)查一下tensorflow版本，注意要查英文的，右上角选择英文，中文的没有更新。</p>
+<p><img src="../../static/imgs/image-20250111180317118.png" alt="image-20250111180317118"></p>
+<p>输入<code>conda search cudatoolkit --info</code>，查看cudatoolkit已有的安装包版本号</p>
+<p>我选了一个2.7.0，最好和我选一样的版本，不然容易错，如果要用和我不一样的，一定要严格按照给出的适配版本。<strong>python版本、cuda toolkit版本和cudnn版本都要适配！缺一不可。</strong></p>
+<p><strong>所有安装最好都带上具体的版本，不要直接安装，这样不知道安的哪个版本，就会因为不适配出错</strong>，不知道安了哪个就<code>conda list</code>看一下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda install cudatoolkit=11.3.1</span><br><span class="line">conda install cudnn==8.2.1</span><br><span class="line">pip install tensorflow-gpu==2.7.0 -i  https://pypi.mirrors.ustc.edu.cn/simple</span><br></pre></td></tr></table></figure>
+<p><code>-i</code>是选择源的flag，然后输入源的地址，然后选择版本，我这里用的科大源。</p>
+<p>安装<code>conda install ipykernel</code></p>
+<p>验证tensorflow</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import tensorflow as tf</span><br><span class="line">tf.__version__</span><br><span class="line">print(&#x27;GPU&#x27;,tf.test.is_gpu_available())</span><br></pre></td></tr></table></figure>
+<p>如果返回true就是可以了，false就是不行，还要再改。</p>
+<p>如果import成功，但是验证gpu的时候出现下面这种情况，就是版本没对应好，要更换某个东西的版本。一般是cudnn，cuda toolkit的版本问题</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; <span class="built_in">print</span>(<span class="string">&#x27;GPU&#x27;</span>,tf.test.is_gpu_available())</span><br><span class="line">WARNING:tensorflow:From &lt;stdin&gt;:1: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed <span class="keyword">in</span> a future version.</span><br><span class="line">Instructions <span class="keyword">for</span> updating:</span><br><span class="line">Use `tf.config.list_physical_devices(<span class="string">&#x27;GPU&#x27;</span>)` instead.</span><br><span class="line">2025-01-11 19:10:40.918358: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions <span class="keyword">in</span> performance-critical operations:  AVX AVX2</span><br><span class="line">To <span class="built_in">enable</span> them <span class="keyword">in</span> other operations, rebuild TensorFlow with the appropriate compiler flags.</span><br><span class="line">2025-01-11 19:10:40.922192: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1850] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly <span class="keyword">if</span> you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu <span class="keyword">for</span> how to download and setup the required libraries <span class="keyword">for</span> your platform.</span><br><span class="line">Skipping registering GPU devices...</span><br><span class="line">GPU False</span><br></pre></td></tr></table></figure>
+<p><img src="../../static/imgs/image-20250111192543720.png" alt="image-20250111192543720"></p>
+<h2 id="安装numpy"><a href="#安装numpy" class="headerlink" title="安装numpy"></a>安装numpy</h2><p>一般tensorflow要和numpy一起用。</p>
+<p>安装numpy</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install numpy==1.22.4</span><br></pre></td></tr></table></figure>
+<p><strong>注意版本</strong>，最好不要安装2.x的</p>
+]]></content>
+  </entry>
 </search>
