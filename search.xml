@@ -422,11 +422,11 @@ ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)\\</script><hr>
 <p>在cmd里</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">nvidia-smi</span><br></pre></td></tr></table></figure>
 <h2 id="安装pytorch"><a href="#安装pytorch" class="headerlink" title="安装pytorch"></a>安装pytorch</h2><p>注意安装前要在anaconda具体的虚拟环境装，不要装在base里，这样我们具体的环境使用不了的。</p>
-<p>先打开Anaconda Prompt</p>
-<p>创造一个虚拟环境</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda create -n $环境名称 python==3.9</span><br></pre></td></tr></table></figure>
+<p>先打开Anaconda Prompt，输入下面的命令</p>
+<p>创造一个虚拟环境，其中“pytor”是虚拟环境的名称，也可以去其他的，你喜欢就好。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda create -n pytor python==3.9</span><br></pre></td></tr></table></figure>
 <p>输入以下命令进入虚拟环境</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda activate 环境名称 </span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda activate pytor</span><br></pre></td></tr></table></figure>
 <p>如果是第一次用，最好输入<code>conda init</code>初始化一下</p>
 <p>这个时候命令行的前面的括号里是我们具体的环境的名称。</p>
 <p> 首先添加清华镜像源（也可以自己添加其他镜像源）：</p>
