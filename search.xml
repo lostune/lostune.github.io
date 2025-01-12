@@ -181,29 +181,6 @@ ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)\\</script><hr>
       </tags>
   </entry>
   <entry>
-    <title>大学几年微信和邮箱的内容</title>
-    <url>/2024/09/19/%E5%A4%A7%E5%AD%A6%E5%87%A0%E5%B9%B4%E5%BE%AE%E4%BF%A1%E5%A5%BD%E5%8F%8B%E5%92%8C%E9%82%AE%E7%AE%B1%E7%9A%84%E5%86%85%E5%AE%B9/</url>
-    <content><![CDATA[<!----------[Butterfly] (https://butterfly.js.org/)------->
-<p>想了想大学几年的微信好友，邮箱内容，还挺有<strong>阶段性</strong>的。</p>
-<h2 id="大一"><a href="#大一" class="headerlink" title="大一"></a>大一</h2><p>刚刚入学，课也比较乱。微信好友主要是一些<strong>班干部</strong>，和<strong>初高中同学</strong>联系也还比较密切。</p>
-<p>邮箱使用很少，大部分是游戏平台的<strong>折扣促销推送</strong>和其他的<strong>广告</strong>邮件。</p>
-<h2 id="大二"><a href="#大二" class="headerlink" title="大二"></a>大二</h2><p>大二专业基础课开设了一些，微信/QQ加了不少的<strong>大学同学</strong>了，主要是<strong>小组作业</strong>合作的时候加的。所以也有很多<strong>小组作业群聊</strong>。</p>
-<p>邮箱多了很多某些软件<strong>教育认证</strong>的邮件，还有一些交<strong>作业</strong>的邮件。</p>
-<h2 id="大三"><a href="#大三" class="headerlink" title="大三"></a>大三</h2><p>大三课设很多专业课，还有实验。和老师的交流更多了，微信里出现了一些<em>课程老师、来宣讲的教授、竞赛的指导老师</em>等等。还有如入党等<em>各种事务认识的同学</em>，与<strong>辅导员</strong>交流变多了。</p>
-<p>邮箱经常需要发提交的<strong>材料、征文</strong>等。需要经常查看有无回复。</p>
-<h2 id="大四"><a href="#大四" class="headerlink" title="大四"></a>大四</h2><p>多了很多很多 <strong>HR</strong> 的微信。还有一些一起去<strong>面试认识的同学</strong>。有很多发布<strong>招聘信息</strong>的群聊。</p>
-<p>邮箱里全是收到的<em>投递成功通知、测评通知、面试通知</em>等等。需要经常上邮箱查看进度。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>经历</tag>
-        <tag>随笔</tag>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>摘抄</title>
     <url>/2024/10/24/%E6%91%98%E6%8A%84/</url>
     <content><![CDATA[<!----------[Butterfly] (https://butterfly.js.org/)------->
@@ -412,10 +389,20 @@ ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)\\</script><hr>
     <title>anaconda、tensorflow和pytorch的配置和使用问题</title>
     <url>/2025/01/11/anaconda%E3%80%81tensorflow%E5%92%8Cpytorch%E7%9A%84%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<!----------[Butterfly] (https://butterfly.js.org/)------->
-<h2 id="安装conda"><a href="#安装conda" class="headerlink" title="安装conda"></a>安装conda</h2><p><strong>先安装anaconda，不用装python，如果已经安装最好卸了</strong></p>
+<h2 id="安装Anaconda"><a href="#安装Anaconda" class="headerlink" title="安装Anaconda"></a>安装Anaconda</h2><p><strong>先安装anaconda，不用装python，如果已经安装最好卸了</strong></p>
 <h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><details class="folding-tag" green><summary> 参考链接 </summary>
               <div class='content'>
               <p><a href="https://blog.csdn.net/weixin_46334272/article/details/135302195">Anaconda安装（最新图文版）_anaconda安装包-CSDN博客</a></p><p><a href="https://blog.csdn.net/qq_38913351/article/details/141088718">安装Anaconda后，在cmd中输入conda —version后，显示‘conda‘ 不是内部或外部命令，也不是可运行的程序或批处理文件。_conda —version不是内部或外部命令-CSDN博客</a></p>
+              </div>
+            </details>
+<h2 id="关于jupyter-notebook"><a href="#关于jupyter-notebook" class="headerlink" title="关于jupyter notebook"></a>关于jupyter notebook</h2><p><code>.ipynb</code>后缀格式的文件是用 jupyter notebook 打开的。</p>
+<p>如果要在 jupyter notebook 使用conda的环境，先在base键入以下命令安装</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda install nb_conda_kernels</span><br></pre></td></tr></table></figure>
+<p>然后在具体的环境里安装以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda install ipykernel</span><br></pre></td></tr></table></figure>
+<details class="folding-tag" green><summary> 参考链接 </summary>
+              <div class='content'>
+              <p><a href="https://blog.csdn.net/u014264373/article/details/119390267">【最全指南】如何在 Jupyter Notebook 中切换/使用 conda 虚拟环境？_多个conda环境 notebook用的哪个-CSDN博客</a></p>
               </div>
             </details>
 <h2 id="查看GPU是否支持cuda"><a href="#查看GPU是否支持cuda" class="headerlink" title="查看GPU是否支持cuda"></a>查看GPU是否支持cuda</h2><p>当然首先得有n卡</p>
@@ -446,7 +433,7 @@ ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)\\</script><hr>
 <h2 id="安装tensorflow"><a href="#安装tensorflow" class="headerlink" title="安装tensorflow"></a>安装tensorflow</h2><p>还是和pytorch类似，先创建一个虚拟环境。进入Anaconda Prompt，输入以下命令，创建一个python版本是3.9.x的虚拟环境。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda create -n tf2 python==3.9</span><br></pre></td></tr></table></figure>
 <p>然后activate</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda activate </span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda activate tf2</span><br></pre></td></tr></table></figure>
 <p>这个时候命令行的前面的括号里是我们具体的环境的名称”tf2”</p>
 <p><img src="https://s21.ax1x.com/2025/01/12/pEP0pH1.jpg" alt="pEP0pH1.jpg"></p>
 <p>上<a href="https://tensorflow.google.cn/install/source_windows">tensorflow官网</a>查一下tensorflow版本，注意要查英文的，右上角选择英文，中文的没有更新。</p>
