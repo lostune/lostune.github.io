@@ -490,6 +490,8 @@ ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)\\</script><hr>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config --set show_channel_urls yes</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/win-64/</span><br></pre></td></tr></table></figure>
 <p> 然后输入命令行安装pytorch：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c nvidia</span><br></pre></td></tr></table></figure>
+<p>验证</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">torch.cuda.is_available()</span><br></pre></td></tr></table></figure>
 <p>此时在jupyter notebook没有可以选择的环境，需要在conda安装一个工具</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda install ipykernel</span><br></pre></td></tr></table></figure>
 <p>然后就可以在jupyter notebook选择了</p>
