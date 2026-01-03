@@ -615,4 +615,593 @@ ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)\\</script><hr>
         <tag>林夕</tag>
       </tags>
   </entry>
+  <entry>
+    <title>文献记录</title>
+    <url>/2025/12/30/%E6%96%87%E7%8C%AE%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<!----------[Butterfly] (https://butterfly.js.org/)------->
+<h1 id="能量消耗"><a href="#能量消耗" class="headerlink" title="能量消耗"></a>能量消耗</h1><h2 id="Methodology-of-physical-activity-and-energy-expenditure-assessment-a-review"><a href="#Methodology-of-physical-activity-and-energy-expenditure-assessment-a-review" class="headerlink" title="Methodology of physical-activity and energy-expenditure assessment: a review"></a>Methodology of physical-activity and energy-expenditure assessment: a review</h2><p>这类方法通过测量身体代谢的关键物理 / 化学指标，结合既定公式或比例关系计算能量消耗，是能量消耗测量的 “金标准” 类方案。</p>
+<h3 id="直接-间接测热法"><a href="#直接-间接测热法" class="headerlink" title="直接/间接测热法"></a>直接/间接测热法</h3><h4 id="双标记水法（DLW）"><a href="#双标记水法（DLW）" class="headerlink" title="双标记水法（DLW）"></a>双标记水法（DLW）</h4><ul>
+<li><p>核心逻辑：通过追踪体内稳定同位素（²H 和 ¹⁸O）的代谢衰减，计算二氧化碳（CO₂）产生量，再通过既定方程推导能量消耗。</p>
+</li>
+<li><p>具体过程：受试者摄入含 ²H₂¹⁸O 的水后，同位素与体内水分混合；²H 仅随水分排出，¹⁸O 随水分和 CO₂共同排出（排出更快）；通过质谱仪分析尿液中同位素浓度回落至初始水平的动力学过程，量化 CO₂产量，最终换算为 EE。</p>
+</li>
+</ul>
+<h4 id="直接测热法"><a href="#直接测热法" class="headerlink" title="直接测热法"></a>直接测热法</h4><ul>
+<li><p>核心逻辑：直接测量身体散发的热量，热量值即等于能量消耗值。</p>
+</li>
+<li><p>具体过程：通过呼吸舱或水冷服装，持续监测流入 / 流出的水温、水流速度，计算身体的热损失，误差小于 1%。</p>
+</li>
+</ul>
+<h4 id="间接测热法"><a href="#间接测热法" class="headerlink" title="间接测热法"></a>间接测热法</h4><ul>
+<li>核心逻辑：基于 “营养氧化产热时，氧气（O₂）消耗与 CO₂产生量和热量成正比” 的原理（公式：营养 + O₂=CO₂+ 热量），通过测量 VO₂（摄氧量）和 CO₂产量估算 TEE。</li>
+<li>细分方式：<ul>
+<li>闭合回路法：受试者在封闭系统中呼吸纯 O₂，CO₂被碱石灰吸收，通过气体体积减少速率计算 O₂消耗率，进而换算 EE（适用于基础代谢率 BMR 或静息代谢率 RMR）；</li>
+<li>开放回路法（通风罩、道格拉斯袋、便携式热量计）：测量吸入 / 呼出气体的流量、O₂和 CO₂浓度，通过气体交换差值计算 VO₂和 CO₂产量，最终估算 EE（适用于短时活动或现场测量，测量时长 1-5 小时）。</li>
+</ul>
+</li>
+</ul>
+<h3 id="基于-“活动参数-×-能量成本”-的计算方式"><a href="#基于-“活动参数-×-能量成本”-的计算方式" class="headerlink" title="基于 “活动参数 × 能量成本” 的计算方式"></a>基于 “活动参数 × 能量成本” 的计算方式</h3><p>这类方法通过记录身体活动的关键参数（时长、强度、步数等），结合预设的 “活动能量成本”（如 MET 值），间接推算能量消耗，操作更便捷</p>
+<h4 id="自我报告工具（问卷、日记-日志）"><a href="#自我报告工具（问卷、日记-日志）" class="headerlink" title="自我报告工具（问卷、日记 / 日志）"></a>自我报告工具（问卷、日记 / 日志）</h4><ul>
+<li>核心逻辑：以 “活动时长 × 活动强度对应的能量成本” 为核心公式，量化不同场景下的 EE。</li>
+<li>具体应用：<ul>
+<li>PA 日记 / 日志：记录 1-7 天内具体活动（如步行、静坐）的时长，乘以该活动的预设能量成本（如 MET 值、Kcal/min），得到 EE（单位：Kcal、MET-min 等）；</li>
+<li>定量历史问卷：通过收集活动的频率、强度、时长（覆盖职业、家庭、休闲等场景），计算连续变量形式的 EE（如 Kcal・kg⁻¹・week⁻¹），支持剂量 - 反应关系分析；</li>
+<li>回忆问卷：采用简化评分系统（如 MET-min・day⁻¹），通过活动强度分级（低 / 中 / 高）和时长估算 EE。</li>
+</ul>
+</li>
+</ul>
+<h4 id="直接观察法"><a href="#直接观察法" class="headerlink" title="直接观察法"></a>直接观察法</h4><ul>
+<li>核心逻辑：与自我报告工具一致，通过观察者记录受试者活动类型及持续时间，再乘以该活动的能量成本（如已发表的活动强度标准值），估算 EE。</li>
+</ul>
+<p>大模型运用可能的方面</p>
+<h3 id="基于-“运动-生理信号转换”-的计算方式"><a href="#基于-“运动-生理信号转换”-的计算方式" class="headerlink" title="基于 “运动 / 生理信号转换” 的计算方式"></a>基于 “运动 / 生理信号转换” 的计算方式</h3><p>这类方法通过运动传感器或生理监测设备捕捉身体信号，通过预设方程或关联模型转换为能量消耗值。</p>
+<h4 id="运动传感器"><a href="#运动传感器" class="headerlink" title="运动传感器"></a>运动传感器</h4><ul>
+<li><p>计步器：仅记录垂直方向步数，可通过 “步数 × 平均步长” 转换为行走距离，再结合步行强度对应的能量消耗系数估算 EE；但无法区分步行、跑步等活动，默认每步能量消耗一致。</p>
+</li>
+<li><p>加速度计（单轴 / 三轴）：将身体运动的 “计数”（反映加速度变化）通过预设的预测方程，转换为 EE；其中单轴加速度计侧重垂直方向运动，三轴覆盖三维运动，换算更全面，但对上肢运动、爬坡等活动的 EE 可能低估（31%-67%）。</p>
+</li>
+</ul>
+<h4 id="心率监测器"><a href="#心率监测器" class="headerlink" title="心率监测器"></a>心率监测器</h4><ul>
+<li>核心逻辑：基于 “心率（HR）与摄氧量（VO₂）的线性关联” 估算 EE，关键采用 “FLEX HR 方法” 优化准确性。</li>
+<li>具体规则：<ul>
+<li>设定 HR 阈值（HR FLEX 点，即运动时最低 HR 与静息时最高 HR 的平均值）；</li>
+<li>高于阈值：HR 与 VO₂呈线性关系，用线性预测方程计算 VO₂，再换算为 EE；</li>
+<li>低于阈值：HR 与 VO₂关联不稳定，采用静息状态下的平均 HR 值估算 EE；</li>
+<li>优化方案：需通过间接测热法同步测量个体 HR 与 VO₂，建立个性化校准曲线，减少情绪、温度等非运动因素的干扰。</li>
+</ul>
+</li>
+</ul>
+<p>精准卡式公式<br>这是运动生理学经典公式，结合性别、心率储备、耗氧量，精准度更高，分男女版本：</p>
+<ul>
+<li><p>第一步：先算「心率储备（HRR）」（核心，代表运动的心率负荷）<br>HRR = 最大心率（MHR） - 静息心率（RHR）✅ 最大心率估算：MHR=220 - 年龄（通用款，简单好用；体能好的人可微调为 218-0.6× 年龄）</p>
+</li>
+<li><p>第二步：算「运动耗氧量（VO₂）」<br>🔹 男性：VO₂ = [(AHR-RHR)÷HRR]×0.6×(MHR-70)+3.5</p>
+<p>🔹 女性：VO₂ = [(AHR-RHR)÷HRR]×0.5×(MHR-70)+3.5</p>
+</li>
+<li><p>第三步：算热量消耗（核心：1L O₂=5kcal）<br>热量（kcal）= VO₂ × 体重 (kg) × 运动时长 (h) × 5 ÷ 1000</p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+HRR = MHR(最大心率) - RHR(静息心率)</script><script type="math/tex; mode=display">
+MHR=220-年龄</script><p>男性耗氧量：</p>
+<script type="math/tex; mode=display">
+VO_2 = \frac{AHR-RHR}{HRR} \times 0.6 \times (MHR-70) + 3.5</script><p>女性耗氧量：</p>
+<script type="math/tex; mode=display">
+VO_2 = \frac{AHR-RHR}{HRR} \times 0.5 \times (MHR-70) + 3.5</script><script type="math/tex; mode=display">
+热量 = \frac{VO_2 \times 体重(kg) \times 运动时长(h) \times 5}{1000}</script><h2 id="Assessment-of-physical-activity-and-energy-expenditure-an-overview-of-objective-measures"><a href="#Assessment-of-physical-activity-and-energy-expenditure-an-overview-of-objective-measures" class="headerlink" title="Assessment of physical activity and energy expenditure: an overview of objective measures"></a>Assessment of physical activity and energy expenditure: an overview of objective measures</h2><h4 id="能量消耗的组成"><a href="#能量消耗的组成" class="headerlink" title="能量消耗的组成"></a>能量消耗的组成</h4><ol>
+<li><p>REE（静息能量消耗）</p>
+<ul>
+<li>定义：禁食状态下、热中性环境中静息时的能量消耗（略高于基础代谢率 BMR）</li>
+<li>主要影响因素：年龄（随年龄增长降低）、性别（女性比男性低 5-10%）、体型（体量大者更高）、体成分（去脂体重是核心决定因素）</li>
+</ul>
+</li>
+<li><p>TEF（食物热效应）</p>
+<ul>
+<li>定义：食物消化、吸收、代谢过程中消耗的能量，约占 TEE 的 10%</li>
+</ul>
+</li>
+<li><p>PAEE（身体活动能量消耗）</p>
+<ul>
+<li>定义：PA 产生的额外能量消耗，是 TEE 中最具变异性的部分</li>
+<li>计算方式：PAEE = 0.9×TEE - REE（假设 TEF 占 10%）</li>
+</ul>
+</li>
+</ol>
+<h2 id="Branched-equation-modeling-of-simultaneous-accelerometry-and-heart-rate-monitoring-improves-estimate-of-directly-measured-physical-activity-energy-expenditure"><a href="#Branched-equation-modeling-of-simultaneous-accelerometry-and-heart-rate-monitoring-improves-estimate-of-directly-measured-physical-activity-energy-expenditure" class="headerlink" title="Branched equation modeling of simultaneous accelerometry and heart rate monitoring improves estimate of directly measured physical activity energy expenditure"></a>Branched equation modeling of simultaneous accelerometry and heart rate monitoring improves estimate of directly measured physical activity energy expenditure</h2><p>本研究以 12 名训练有素的年轻男性（22.7-30.0 岁，BMI 20.6-25.2 kg/m²）为对象，旨在评估<strong>分支方程模型</strong>结合<strong>加速度计（CSA）</strong> 与<strong>心率监测（HR）</strong> 估计身体活动能量消耗（PAEE）的精度，对比了个体校准（IC）和组校准（GC）的效果。研究通过 22 小时全身量热法获取实测 PAEE，将 CSA 和 HR 数据按不同权重（P₁₋₄）构建先验和事后分支模型，结果显示：所有分支模型的估计误差（先验 IC：4.4±29%、GC：3.5±20%；事后 IC：1.5±13%、GC：0.1±9.8%）显著低于单一 CSA（≤45%）、单一 HR（≥39%）及非分支组合（≥25.7%），且<strong>个体校准在分支建模中并非必需</strong>，该方法为 PAEE 的精准估计提供了更有效的手段。</p>
+<h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><p>通过融合 HR（反映生理负荷）和 CSA（反映运动幅度）的同步数据，解决单一传感器的误差局限，实现 PAEE 的估计</p>
+<h4 id="数据采集与预处理"><a href="#数据采集与预处理" class="headerlink" title="数据采集与预处理"></a>数据采集与预处理</h4><ul>
+<li><strong>HR 数据</strong>：通过 Polar 心率监测仪每 15 秒采集 1 次，换算为分钟均值，再减去 “静息心率（RHR）”（睡眠时第 10 个最低 HR 值），得到 “超静息心率”（消除个体基础差异）。</li>
+<li><strong>CSA 数据</strong>：髋部佩戴 4 个 CSA 加速度计，分别以 15 秒和 60 秒为周期采样，取 4 个设备的分钟均值（减少设备差异和佩戴位置影响），单位为 “计数 / 分钟（counts/min）”。</li>
+<li><strong>参考标准</strong>：通过 22 小时全身量热法实测总能量消耗（TEE），结合静息能量消耗（REE）、饮食诱导产热（DIT），计算真实 PAEE（PAEE=TEE-REE-DIT），作为算法验证的金标准。</li>
+</ul>
+<h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><ul>
+<li><p><strong>身体活动强度（PAI）</strong>：单位为 kJ・kg⁻¹・min⁻¹，是 PAEE 的核心中间变量，由摄氧量（VO₂）减去 REE 计算得出（1 升氧 = 20.35 kJ，假设脂肪和碳水供能各占 50%）。</p>
+</li>
+<li><p>关键阈值</p>
+<ul>
+<li>x：CSA 阈值（区分 “低运动幅度” 与 “高运动幅度”）；</li>
+<li>y：走跑转换 HR（区分 “步行” 与 “跑步” 的生理负荷）；</li>
+<li>z：Flex HR（区分 “活动” 与 “非活动” 的临界 HR，计算方式：10+（RHR+3km/h 步行时平均 HR）/2）</li>
+</ul>
+</li>
+</ul>
+<h4 id="基础校准（将原始数据转化为-PAI）"><a href="#基础校准（将原始数据转化为-PAI）" class="headerlink" title="基础校准（将原始数据转化为 PAI）"></a>基础校准（将原始数据转化为 PAI）</h4><p>  分支模型的输入是 “HR-PAI” 和 “CSA-PAI” 的校准关系，需通过跑步机实验提前推导，分为 3 类校准方程：</p>
+<h5 id="1-CSA→PAI-校准（线性回归）"><a href="#1-CSA→PAI-校准（线性回归）" class="headerlink" title="1. CSA→PAI 校准（线性回归）"></a>1. CSA→PAI 校准（线性回归）</h5><p>  因 CSA 在 “低强度运动” 和 “中高强度运动” 的 PAI 关联不同，采用<strong>分段线性回归</strong>：</p>
+<ul>
+<li>先定义 “CSA Flex 点”：3km/h 步行时 CSA 均值的 50%（组水平为 497 counts/min）；</li>
+<li>当 CSA＞497 counts/min（中高强度）：PAI = 0.053×CSA + 47.88；</li>
+<li><p>当 CSA ≤497 counts/min（低强度 / 静息）：PAI = 0.15×CSA。</p>
+<h5 id="2-HR→PAI-校准（二次回归）"><a href="#2-HR→PAI-校准（二次回归）" class="headerlink" title="2. HR→PAI 校准（二次回归）"></a>2. HR→PAI 校准（二次回归）</h5><p>HR 与 PAI 呈非线性关系，采用<strong>二次回归</strong>（强制过原点，即 HR=RHR 时 PAI=0）：</p>
+</li>
+<li><p>仅使用 3-16 km/h 速度区间的数据（覆盖步行和中速跑步）；</p>
+</li>
+<li>方程：PAI = 0.011×HR² + 5.82×HR（HR 为 “超静息心率”）。</li>
+<li><p>方程中的 <strong>CSA 是原始值</strong>（单位：counts/min），<strong>HR 是预处理后的 “超静息心率”（非原始 HR，也不是换算后的 HR-PAI）</strong> —— 两者均为传感器原始数据经过简单处理后的形式</p>
+<h5 id="3-非分支组合校准（多元线性回归，对照组）"><a href="#3-非分支组合校准（多元线性回归，对照组）" class="headerlink" title="3. 非分支组合校准（多元线性回归，对照组）"></a>3. 非分支组合校准（多元线性回归，对照组）<a id="多元线性回归"></a></h5><p>作为分支模型的对比基准，直接加权融合 HR 和 CSA 数据：</p>
+</li>
+<li><p>方程：PAI = 0.028×CSA + 4.04×HR - 38.3；</p>
+</li>
+<li>局限：仅简单加权，未利用 HR 与 CSA 的同步时序特征，泛化性差（误差≥25.7%）</li>
+</ul>
+<p>这个方程是<strong>组水平的非分支组合校准方程</strong>，通过 “跑步机校准实验 + 多元线性回归拟合” 推导得出，核心是将加速度计（CSA）与心率（HR）数据线性融合，用于预测身体活动强度（PAI）</p>
+<p>这是研究中的<strong>对照组模型</strong>（非分支组合模型），用于对比分支方程模型的优越性。其本质是 “加权平均式” 融合 CSA（运动幅度）和 HR（生理负荷）数据，未利用两者的同步时序特征，是传统的双传感器数据组合方法。</p>
+<ul>
+<li><strong>自变量</strong>：CSA（原始计数 / 分钟）、HR（超静息心率，即 HR - RHR）；</li>
+<li><strong>因变量</strong>：上述计算的真实 PAI；</li>
+<li><strong>拟合方法</strong>：在组水平（12 名受试者的合并数据）进行<strong>多元线性回归</strong>，强制拟合线性方程 <code>PAI = a×CSA + b×HR + c</code>（a、b 为权重系数，c 为常数项）；</li>
+<li><strong>系数确定</strong>：通过最小化 “预测 PAI 与真实 PAI 的误差”，最终拟合得到系数：a=0.028、b=4.04、c=-38.3，即方程 <code>PAI = 0.028×CSA + 4.04×HR - 38.3</code>。</li>
+<li>最小化 “预测 PAI 与真实 PAI 的误差” 采用<strong>最小二乘法（Least Squares Method）</strong>，通过数学优化求解回归方程系数，使误差平方和最小。最小化 “每个数据点的真实 PAI 与预测 PAI 的误差平方和”（而非直接最小化误差和，避免正负误差相互抵消）</li>
+<li>设PAI = a×CSA + b×HR + c，其中 a（CSA 权重系数）、b（HR 权重系数）、c（常数项）为待求解的未知参数，也是优化的核心对象，</li>
+<li><strong>数据输入</strong>：将跑步机校准实验（3-9 km/h 速度区间）的所有数据点（含不同速度、不同受试者、2 次重复校准的 CSA、HR 及对应真实 PAI）代入目标函数。</li>
+<li><strong>求解系数</strong>：通过最小二乘法的数学推导（解线性方程组），找到使误差平方和最小的 a、b、c。解方程组核心逻辑：对误差平方和分别求 a、b、c 的偏导数，令偏导数为 0，得到 3 个线性方程，联立求解即可。</li>
+</ul>
+<h4 id="分支方程模型（融合-HR-与-CSA）"><a href="#分支方程模型（融合-HR-与-CSA）" class="headerlink" title="分支方程模型（融合 HR 与 CSA）"></a>分支方程模型（融合 HR 与 CSA）</h4><p>传统融合方法（如多元线性回归）的核心缺陷是 “<strong>一刀切</strong>”—— 无论活动类型（如步行、骑行、静坐）如何，均对 HR 和 CSA 数据进行固定权重加权</p>
+<p>分支方程模型的设计逻辑正是<strong>针对场景动态调整权重</strong>：通过预设 / 优化的 “CSA 阈值（x）” 和 “HR 阈值（y/z）”，将复杂的身体活动划分为 4 类典型场景，为每类场景分配 HR 与 CSA 的最优贡献权重，实现 “该用 HR 时用 HR，该用 CSA 时用 CSA，两者都适用时按比例融合”。</p>
+<h5 id="权重参数（分配贡献的-“比例”）"><a href="#权重参数（分配贡献的-“比例”）" class="headerlink" title="权重参数（分配贡献的 “比例”）"></a>权重参数（分配贡献的 “比例”）</h5><p>权重参数（<em>P</em>1−4）代表 HR-PAI（心率推导的活动强度）在总 PAI 中的贡献比例，对应的（1-<em>P</em>1−4）则是 CSA-PAI 的贡献比例，先验预设遵循 “场景适配性” 原则：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>权重符号</th>
+<th>先验预设值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>P</em>1</td>
+<td>1（100%）</td>
+</tr>
+<tr>
+<td><em>P</em>2</td>
+<td>0.5（50%）</td>
+</tr>
+<tr>
+<td><em>P</em>3</td>
+<td>0.5（50%）</td>
+</tr>
+<tr>
+<td><em>P</em>4</td>
+<td>0（0%）</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>通过 “CSA 是否＞x” 和 “HR 是否＞y/z” 的双重判断，将所有活动划分为 4 个场景，每个场景对应固定 / 优化的权重</p>
+<h5 id="各场景的典型活动与权重适配性示例："><a href="#各场景的典型活动与权重适配性示例：" class="headerlink" title="各场景的典型活动与权重适配性示例："></a>各场景的典型活动与权重适配性示例：</h5><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>典型活动</th>
+<th>权重适配逻辑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Box1</td>
+<td>跑步、快速骑行</td>
+<td>高运动幅度（CSA&gt;5）+ 高 HR（&gt; 走跑转换 HR），HR 能精准反映高强度负荷，故 P₁=1</td>
+</tr>
+<tr>
+<td>Box2</td>
+<td>快走、爬缓坡</td>
+<td>高运动幅度（CSA&gt;5）+ 中低 HR（≤走跑转换 HR），CSA 反映步幅 / 速度，HR 反映疲劳度，故各占 50%</td>
+</tr>
+<tr>
+<td>Box3</td>
+<td>慢骑、举重</td>
+<td>低运动幅度（CSA≤5）+ 高 HR（&gt;Flex HR），CSA 无法捕捉静态负荷，需 HR 补充，故各占 50%</td>
+</tr>
+<tr>
+<td>Box4</td>
+<td>静坐、慢走</td>
+<td>低运动幅度（CSA≤5）+ 低 HR（≤Flex HR），HR 易受非运动因素干扰，CSA 更稳定，故 P₄=0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>对量热计实验中采集的 “每分钟 HR 和 CSA 数据”，按以下流程计算融合 PAI：</p>
+<ol>
+<li><strong>数据预处理</strong><ul>
+<li>HR：将原始 HR（beats/min）减去静息心率（RHR），得到 “超静息心率”（消除个体基础差异）；</li>
+<li>CSA：取髋部 4 个 CSA 加速度计的分钟均值（减少设备误差和佩戴位置影响）。</li>
+</ul>
+</li>
+<li><strong>场景判断</strong>：按 “CSA 是否＞x”→“HR 是否＞y/z” 的顺序，确定当前分钟数据所属场景（Box1-4）；</li>
+<li><strong>权重融合</strong>：根据场景对应的权重（<em>P</em>1−4），计算融合 PAI：.</li>
+</ol>
+<script type="math/tex; mode=display">
+\hat{PAI}_k = P_k \cdot PAI_{HR} + (1-P_k) \cdot PAI_{CSA} \quad (k=1,2,3,4)</script><h4 id="PAEE-计算-——-时间积分（从强度到总量）"><a href="#PAEE-计算-——-时间积分（从强度到总量）" class="headerlink" title="PAEE 计算 —— 时间积分（从强度到总量）"></a>PAEE 计算 —— 时间积分（从强度到总量）</h4><p>PAEE 是 “12.5 小时清醒期（07:30-20:00）内 PAI 的累积总和”，每分钟的PAI为积分的单元，计算公式为：</p>
+<script type="math/tex; mode=display">
+PAEE = \sum_{i=1}^{750} \hat{PAI}_{k,i}</script><h4 id="模型的参数优化：从-“先验”-到-“事后”-的精度提升"><a href="#模型的参数优化：从-“先验”-到-“事后”-的精度提升" class="headerlink" title="模型的参数优化：从 “先验” 到 “事后” 的精度提升"></a>模型的参数优化：从 “先验” 到 “事后” 的精度提升</h4><p>模型分为 “先验模型” 和 “事后模型”，核心差异在于 “阈值与权重是否优化”—— 先验模型用预设参数，事后模型通过最小化误差优化参数，进一步提升精度：</p>
+<h5 id="先验模型（参数预设，快速应用）"><a href="#先验模型（参数预设，快速应用）" class="headerlink" title="先验模型（参数预设，快速应用）"></a>先验模型（参数预设，快速应用）</h5><ul>
+<li>优化目标：最小化 “估计 PAEE 与量热计实测 PAEE 的标准误（SEE）”，公式为</li>
+</ul>
+<script type="math/tex; mode=display">
+SEE = \sqrt{\frac{1}{n}\sum_{i=1}^{n}\left( \hat{PAEE}_i - PAEE_i \right)^2}</script><ul>
+<li>参数来源：基于生理常识和预实验设定（如 x=5 counts/min，<em>P</em>1=1）；</li>
+<li>优势：无需优化，操作简单，适合大规模流行病学研究（无需复杂计算）；</li>
+<li>精度：个体校准（IC）误差 4.4±29%，组校准（GC）误差 3.5±20%，已显著优于单一方法（CSA 误差≤45%，HR 误差≥39%）。</li>
+<li>优化参数：x（0-60 counts/min）、y（24-105 beats/min）、z（5.5-34 beats/min）、<em>P</em>1−4（0-100%，且<em>P</em>1≥<em>P</em>2≥<em>P</em>3≥<em>P</em>4，保证权重逻辑合理性）；</li>
+<li>约束条件：参数范围基于 “先验值 ±50%” 扩展（如 y 的范围是 “走跑转换 HR±50%”），避免出现生理上不合理的参数（如 x=100 counts/min，远超日常活动 CSA 值）；</li>
+<li>优化结果：组校准误差降至 0.1±9.8%，个体校准误差降至 1.5±13%，精度接近量热计实测水平（±2%）。</li>
+</ul>
+<h5 id="优化后参数的关键变化（与先验对比）："><a href="#优化后参数的关键变化（与先验对比）：" class="headerlink" title="优化后参数的关键变化（与先验对比）："></a>优化后参数的关键变化（与先验对比）：</h5><ul>
+<li>x（CSA 阈值）：组校准优化为 35 counts/min（先验 5），说明群体层面 “低运动幅度” 的界定需更高 CSA 值；</li>
+<li><em>P</em>4（Box4 权重）：组校准优化为 0.1（先验 0），说明低运动幅度 + 非活动状态下，HR 仍有 10% 的贡献（如静坐时轻微情绪波动导致 HR 小幅升高）；</li>
+<li>HR/CSA 贡献占比：优化后 HR 贡献 18-22%，CSA 贡献 78-82%，验证 “CSA 在日常活动中更稳定，HR 仅在特定场景补充”。</li>
+</ul>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>这篇文章主要就是讲的用回归模型来计算热量，主要采集了两个数据，一个是csa计步器数据，一个是心率。先测量了金标准，然后以此计算误差。</p>
+<p>总共用了两种方法，第一种是比较简单的回归模型，<code>PAI = 0.028×CSA + 4.04×HR - 38.3</code>；这个是按每分钟算的，CSA和HR都是每分钟的平均数据，按时间把每分钟的PAI求和就是总的PAEE；</p>
+<p>第二种也是文章提出的核心改进，说白了就是加了几个分类讨论，文章是分了4类，给csa数据和hr分别设了阈值，根据情况来计算csa转换的PAI和hr转换的PAI，不同情况对应不同的系数；这些系数体现了csa和hr对PAI的贡献的权重；然后根据情况用csa转换的PAI和hr转换的PAI来计算每分钟的PAI，最后也是按时间加起来得到总的PAEE。在这里，这些阈值和系数是先验预设的（就是提前随便设置或者简单换算的初始值，和实验数据无关）</p>
+<p>然后进行了参数优化，就是利用实验数据和金标准来调整系数，这样系数就和实验数据有关了，类似反向传播吧，提高准确率。</p>
+<p>文章的结论就是分类讨论之后，准确度要提高了，相比单一 CSA（≤45%）、单一 HR（≥39%）及非分支组合（≥25.7%）。</p>
+<p>核心就是用了更复杂的非线性拟合，这种非线性拟合可以拆分为<strong>简单</strong>的线性方程和非线性方程的加权组合</p>
+<h2 id="Detection-of-Type-Duration-and-Intensity-of-Physical-Activity-Using-an-Accelerometer"><a href="#Detection-of-Type-Duration-and-Intensity-of-Physical-Activity-Using-an-Accelerometer" class="headerlink" title="Detection of Type, Duration, and Intensity of Physical Activity Using an Accelerometer"></a>Detection of Type, Duration, and Intensity of Physical Activity Using an Accelerometer<a id="DTPA"></a></h2><h3 id="PA-检测技术的发展脉络"><a href="#PA-检测技术的发展脉络" class="headerlink" title="PA 检测技术的发展脉络"></a>PA 检测技术的发展脉络</h3><h4 id="（一）活动类型检测的发展"><a href="#（一）活动类型检测的发展" class="headerlink" title="（一）活动类型检测的发展"></a>（一）活动类型检测的发展</h4><ol>
+<li><strong>传统加速度计的局限</strong>：早期加速度计基于「任意加速度单位（AAU）/ 分钟」测量，仅能反映 PA 的模式、持续时间和强度，进而估算能量消耗，但无法识别具体活动类型（如区分步行和骑行），且时间分辨率低（1 分钟 epoch），难以精准捕捉短时间、不连续的日常活动。</li>
+<li><strong>多传感器检测阶段</strong>：近几十年，分类算法与加速度计结合推动技术进步，早期采用<strong>多个加速度计</strong>（佩戴在胸、腿、脚等不同身体部位），分类准确率达 85%-95%，甚至能识别 32 种动作和姿势，但多传感器可能增加受试者负担，实用性受限。</li>
+<li><strong>单传感器检测阶段</strong>：为提升便捷性，后续研究转向「单加速度计」，佩戴于腰或胸部，可识别姿势（躺、坐、站）和常见运动（步行、跑步、骑行、划船等），分类准确率 71%-91%。</li>
+<li><strong>核心技术支撑</strong>：分类算法是关键，主流包括决策树、神经网络、贝叶斯分类器、隐马尔可夫模型，核心逻辑是将加速度信号分割为固定长度的「片段（segments）」，提取片段的信号特征进行活动类型判别；片段大小影响检测效果：采样频率固定时，片段越长，包含的信号样本越多，特征越丰富，但时间分辨率越低；片段越短，时间分辨率越高，理论上更易识别短活动，但需保证分类性能稳定。</li>
+</ol>
+<h4 id="（二）活动强度检测的发展"><a href="#（二）活动强度检测的发展" class="headerlink" title="（二）活动强度检测的发展"></a>（二）活动强度检测的发展</h4><ol>
+<li><strong>强度分类标准</strong>：动态活动（步行、骑行等）的强度（轻、中、剧）主要由运动速度决定（依据 Ainsworth 等的研究，结合 MET 值划分）。</li>
+<li><strong>传统强度检测的局限</strong>：早期通过 AAU 关联能量消耗来评估强度，但 AAU 与能量消耗的线性关系仅适用于单一活动类型，且只能测量 1 分钟以上的活动，无法满足多样化日常活动的强度评估需求。</li>
+<li><strong>技术改进方向</strong>：① 用躯干加速度计提取信号特征，估算步行速度及步态参数（步长、步频）；② 结合 GPS 与加速度计，成为日常步行、跑步、骑行速度检测的最精准方法，但 GPS 设备佩戴性差、成本高，不适合大规模研究。</li>
+</ol>
+<h3 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h3><p>文章的<strong>Data processing（数据处理）</strong> 是连接原始加速度信号与后续建模（活动分类、速度估计）的核心环节，目的是从原始数据中提取有意义的特征，为模型提供有效输入。</p>
+<h3 id="一、数据隔离：筛选有效活动信号"><a href="#一、数据隔离：筛选有效活动信号" class="headerlink" title="一、数据隔离：筛选有效活动信号"></a>一、数据隔离：筛选有效活动信号</h3><p>首先对原始加速度信号进行「提纯」，确保仅分析每个活动任务的稳定状态数据：</p>
+<ol>
+<li><strong>信号分割依据</strong>：根据实验中秒表记录的「活动开始时间」和「活动结束时间」，从连续的加速度数据流中，截取对应活动的信号片段（比如仅提取「户外步行」这段时间的信号，排除其他活动的干扰）。</li>
+<li><strong>排除过渡数据</strong>：为了避免活动启动 / 停止时的不稳定信号（比如从站立到步行的衔接阶段）影响分析，最终保留的有效数据是「开始后 5 秒」到「结束前 5 秒」的片段。这一 5 秒延迟的设置，是通过可视化观察数据确定的，核心是只保留活动的「稳态阶段」。</li>
+</ol>
+<h3 id="二、分段处理：设置不同时间分辨率的分析窗口"><a href="#二、分段处理：设置不同时间分辨率的分析窗口" class="headerlink" title="二、分段处理：设置不同时间分辨率的分析窗口"></a>二、分段处理：设置不同时间分辨率的分析窗口</h3><p>由于研究的核心目标之一是「找到兼顾分类准确率和时间分辨率的最优段大小」，数据处理中采用了「非重叠分段」策略，具体设计如下：</p>
+<ol>
+<li><p>段大小（Segment Size）设置</p>
+<p>：将提纯后的活动信号，分割为 6 种不同长度的非重叠片段，对应 6 种时间分辨率：</p>
+<ul>
+<li>段大小：0.4、0.8、1.6、3.2、6.4、12.8 秒</li>
+<li>对应样本数：由于加速度计的采样频率是 20Hz（每秒采集 20 个数据点），因此各段的样本数为「段大小 ×20」，即 8、16、32、64、128、256 个样本。</li>
+</ul>
+</li>
+<li><p><strong>分段目的</strong>：不同段大小直接影响特征的稳定性和时间分辨率 —— 段越大，包含的信号信息越丰富，特征越稳定，但时间分辨率越低（难以识别短时间活动）；段越小，时间分辨率越高，但特征的 intraclass 变异性（同一活动类型内部的特征差异）越大，可能降低分类准确率。后续通过对比 6 种段大小的建模效果，最终筛选出最优值。</p>
+</li>
+</ol>
+<h3 id="三、特征提取：从时域和频域提取关键信号属性"><a href="#三、特征提取：从时域和频域提取关键信号属性" class="headerlink" title="三、特征提取：从时域和频域提取关键信号属性"></a>三、特征提取：从时域和频域提取关键信号属性</h3><p>这是数据处理的核心，针对每个分段后的信号片段，提取「时域特征」和「频域特征」（均在 x、y、z 三个轴上分别计算，x = 垂直方向、y = 中外侧方向、z = 前后方向），这些特征能够反映活动的运动模式差异。</p>
+<h4 id="1-时域特征（直接从原始信号中计算，反映信号的时间分布特性）"><a href="#1-时域特征（直接从原始信号中计算，反映信号的时间分布特性）" class="headerlink" title="1. 时域特征（直接从原始信号中计算，反映信号的时间分布特性）"></a>1. 时域特征（直接从原始信号中计算，反映信号的时间分布特性）</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>特征名称</th>
+<th>定义与作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>均值（<em>a</em>ˉ）</td>
+<td>一段信号中加速度值的平均值，反映活动的整体运动强度（比如静态活动的均值更稳定，动态活动的均值波动大）。</td>
+</tr>
+<tr>
+<td>标准差（<em>σ</em>）</td>
+<td>加速度值的离散程度，反映运动的剧烈程度（比如跑步的标准差远大于静坐）。</td>
+</tr>
+<tr>
+<td>峰峰值（$a^{pp}$）</td>
+<td>一段信号中最大加速度与最小加速度的差值，体现运动的幅度（比如跳跃的峰峰值大于步行）。</td>
+</tr>
+<tr>
+<td>同轴互相关（<em>R<strong>α</strong>β</em>）</td>
+<td>计算同一轴上「连续两个分段信号」的相似度（公式 1、2），反映运动的连续性（比如步行的步频稳定，同轴互相关值高；不规则活动的互相关值低）。</td>
+</tr>
+<tr>
+<td>轴间互相关（<em>R<strong>α</strong>β</em>）</td>
+<td>计算同一时间段内「不同轴信号」的相似度（公式 1、2），反映运动在三维空间的协同性（比如骑行时前后方向与垂直方向的运动协同性强，轴间互相关值高）。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="2-频域特征（通过信号转换提取，反映信号的频率分布特性）"><a href="#2-频域特征（通过信号转换提取，反映信号的频率分布特性）" class="headerlink" title="2. 频域特征（通过信号转换提取，反映信号的频率分布特性）"></a>2. 频域特征（通过信号转换提取，反映信号的频率分布特性）</h4><p>需先通过「快速傅里叶变换（FFT）」将时域信号转换为频域信号，得到「功率谱密度（P）」（反映不同频率成分的能量分布），再基于 P 提取以下特征：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>特征名称</th>
+<th>定义与作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>主频率（Dominant Frequency）</td>
+<td>功率谱密度（P）最大值对应的频率，反映运动的主导频率（比如步行的步频对应特定主频率，跑步的主频率更高）。</td>
+</tr>
+<tr>
+<td>谱峰幅度（A）</td>
+<td>功率谱密度（P）的最大值，反映主导频率成分的能量强度（比如跑步的谱峰幅度大于步行）。</td>
+</tr>
+<tr>
+<td>频域熵（J）</td>
+<td>衡量频率分布的均匀性（公式 3），熵值越低，频率分布越集中（比如规律运动如骑行的频域熵低；不规则运动如洗碗的频域熵高）。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>文章的 <strong>Modeling and statistics（建模与统计）</strong> 部分是实现研究核心目标（活动类型分类、活动强度 / 速度估计）的关键环节，核心逻辑是「针对不同研究目标选择适配的建模方法，通过严格的统计验证保证结果可靠性」。整个部分可分为 <strong>两大建模任务（活动分类 + 速度估计）</strong> + <strong>统计检验方法</strong>，以下结合研究细节逐模块拆解：</p>
+<h3 id="数据处理-：活动类型分类（基于决策树模型）"><a href="#数据处理-：活动类型分类（基于决策树模型）" class="headerlink" title="数据处理 ：活动类型分类（基于决策树模型）"></a>数据处理 ：活动类型分类（基于决策树模型）</h3><p>目的是通过加速度特征，将受试者的活动精准划分为 7 类（躺、坐、站、动态站立、步行、跑步、骑行），并找到兼顾分类准确率和时间分辨率的最优参数。</p>
+<h4 id="1-建模前准备：活动类别定义"><a href="#1-建模前准备：活动类别定义" class="headerlink" title="1. 建模前准备：活动类别定义"></a>1. 建模前准备：活动类别定义</h4><p>先将实验中 20 项具体活动「归类」，形成决策树的目标分类标签（避免类别过多导致模型复杂）：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>归类后类别</th>
+<th>包含的具体活动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>躺（lie）</td>
+<td>床上平躺</td>
+</tr>
+<tr>
+<td>坐（sit）</td>
+<td>椅子静坐、电脑办公</td>
+</tr>
+<tr>
+<td>站（stand）</td>
+<td>静止站立</td>
+</tr>
+<tr>
+<td>动态站立（DS）</td>
+<td>站立洗碗（静态姿势下的动态动作）</td>
+</tr>
+<tr>
+<td>步行（walk）</td>
+<td>走廊步行、上下楼、户外步行</td>
+</tr>
+<tr>
+<td>跑步（run）</td>
+<td>户外跑步</td>
+</tr>
+<tr>
+<td>骑行（cycle）</td>
+<td>户外骑行</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="2-输入特征：时域-频域加速度特征"><a href="#2-输入特征：时域-频域加速度特征" class="headerlink" title="2. 输入特征：时域 + 频域加速度特征"></a>2. 输入特征：时域 + 频域加速度特征</h4><p>模型的输入是从加速度信号中提取的「量化特征」，均在三轴（x = 垂直方向、y = 中外侧方向、z = 前后方向）上计算，核心特征及作用如下（筛选后最关键的 5 个特征）：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>特征名称</th>
+<th>类型</th>
+<th>核心作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中外侧方向标准差（σᵧ）</td>
+<td>时域</td>
+<td>区分「静态活动」（躺、坐、站）和「动态 /ambulatory 活动」（DS、步行、跑步、骑行）：静态活动 σᵧ小，动态活动 σᵧ大</td>
+</tr>
+<tr>
+<td>垂直方向加速度均值（aₓ）</td>
+<td>时域</td>
+<td>识别「躺」：躺姿时身体与重力方向平行，aₓ与坐姿、站姿差异显著</td>
+</tr>
+<tr>
+<td>前后方向同轴互相关（R_z）</td>
+<td>时域</td>
+<td>区分「坐」和「站」：坐姿时身体静止，前后方向信号相似度高（R_z 大），站姿略低</td>
+</tr>
+<tr>
+<td>垂直方向标准差（σₓ）</td>
+<td>时域</td>
+<td>识别「跑步」：跑步时垂直方向冲击力强，σₓ远大于其他动态活动</td>
+</tr>
+<tr>
+<td>前后方向标准差（σ_z）</td>
+<td>时域</td>
+<td>区分「步行」「骑行」「DS」：步行时 σ_z 呈周期性波动，骑行时 σ_z 稳定，DS 时 σ_z 幅度小</td>
+</tr>
+<tr>
+<td>频域熵（J）</td>
+<td>频域</td>
+<td>辅助区分不规则活动（如 DS）：不规则活动频率分布均匀，J 值高；规律活动（步行、骑行）J 值低</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="3-关键参数：6-种段大小（时间分辨率）"><a href="#3-关键参数：6-种段大小（时间分辨率）" class="headerlink" title="3. 关键参数：6 种段大小（时间分辨率）"></a>3. 关键参数：6 种段大小（时间分辨率）</h4><p>为了平衡「分类准确率」和「时间分辨率」，模型针对 6 种不同的「段大小」（信号分割的时间窗口）分别构建，参数如下：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>段大小（s）</th>
+<th>对应样本数（个）</th>
+<th>核心特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.4</td>
+<td>8</td>
+<td>时间分辨率最高，但特征变异性大，分类准确率最低（90.4%）</td>
+</tr>
+<tr>
+<td>0.8/1.6/3.2</td>
+<td>16/32/64</td>
+<td>准确率逐步提升，但仍低于最优值</td>
+</tr>
+<tr>
+<td>6.4</td>
+<td>128</td>
+<td>最优：准确率 93.1%，且时间分辨率最高（可识别短时间活动）</td>
+</tr>
+<tr>
+<td>12.8</td>
+<td>256</td>
+<td>准确率 93.0%（与 6.4 秒无差异），但时间分辨率低，无法精准捕捉短活动</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="模型构建流程（C4-5-算法）"><a href="#模型构建流程（C4-5-算法）" class="headerlink" title="模型构建流程（C4.5 算法）"></a>模型构建流程（C4.5 算法）</h3><p>所有决策树均采用<strong>C4.5 算法</strong></p>
+<h4 id="C4-5算法"><a href="#C4-5算法" class="headerlink" title="C4.5算法"></a>C4.5算法</h4><p>C4.5 算法是<strong>经典的决策树分类算法</strong>，由机器学习学者 Ross Quinlan 在 ID3 算法基础上改进而来，核心用于解决 “基于特征的多类别分类问题”。它在文章的决策树模型中起到了<strong>特征筛选、分支规则构建、避免过拟合</strong>的作用</p>
+<p>决策树的本质是 “通过特征不断分割数据，让每个分支的数据越来越‘纯粹’（即同一类别占比越来越高）”。C4.5 算法的核心是<strong>用 “信息增益比” 判断特征的分割效果</strong>，选择最优特征作为每个节点的分支依据。</p>
+<p>决策树的节点阈值不是手动设定的，而是算法通过「遍历所有可能分割点 + 计算信息增益比」自动筛选的 —— 核心目标是找到能让数据分类 “最纯粹”（信息增益比最大）的那个值，作为该节点的判别阈值。</p>
+<h5 id="阈值计算的核心原理"><a href="#阈值计算的核心原理" class="headerlink" title="阈值计算的核心原理"></a>阈值计算的核心原理</h5><p>对某一连续特征（如文章中的 σᵧ、aₓ），C4.5 算法会通过以下逻辑确定最优阈值：</p>
+<ol>
+<li>本质：将连续特征转化为 “二分类离散特征”（如 σᵧ &gt; T 或 σᵧ &lt; T），T 即为阈值；</li>
+<li>核心准则：选择使「<strong>信息增益比（GainRatio）</strong>」最大的 T 作为最优阈值；</li>
+<li>关键逻辑：分割后的数据 “类别纯度提升越多”，信息增益比越大，阈值的区分效果越好。</li>
+</ol>
+<h5 id="阈值计算的具体步骤（以文章中-σᵧ特征为例）"><a href="#阈值计算的具体步骤（以文章中-σᵧ特征为例）" class="headerlink" title="阈值计算的具体步骤（以文章中 σᵧ特征为例）"></a>阈值计算的具体步骤（以文章中 σᵧ特征为例）</h5><p>假设我们要为根节点的 σᵧ（中外侧方向标准差）计算阈值，步骤如下：</p>
+<ol>
+<li><p><strong>收集特征值并排序</strong>：提取训练集中所有样本的 σᵧ数值，按升序排列（如：0.1, 0.2, 0.3, 0.5, 0.7）；</p>
+</li>
+<li><p><strong>生成候选分割点</strong>：取相邻两个特征值的中点作为候选分割点（避免遗漏最优阈值），上述示例的候选分割点为：0.15, 0.25, 0.4, 0.6；</p>
+</li>
+<li><p>对每个候选分割点计算信息增益比</p>
+<ul>
+<li>按分割点 T 将样本分为两组（S₁：σᵧ &lt; T；S₂：σᵧ ≥ T）；</li>
+<li>计算两组的信息熵、信息增益、分裂信息；</li>
+<li>最终得到该分割点的信息增益比；</li>
+</ul>
+</li>
+<li><p><strong>选择最优阈值</strong>：比较所有候选分割点的信息增益比，取最大值对应的 T 作为该节点的阈值（如示例中 T=0.4 时信息增益比最大，即为根节点阈值）。</p>
+</li>
+</ol>
+<h5 id="涉及的核心公式"><a href="#涉及的核心公式" class="headerlink" title="涉及的核心公式"></a>涉及的核心公式</h5><h6 id="1-信息熵（Entropy）"><a href="#1-信息熵（Entropy）" class="headerlink" title="1. 信息熵（Entropy）"></a>1. 信息熵（Entropy）</h6><p>衡量样本集的类别混乱度：</p>
+<script type="math/tex; mode=display">Entropy(S) = -\sum_{c=1}^{C} p(c) \log_2 p(c)</script><ul>
+<li>$S$：当前样本集；</li>
+<li>$C$：类别总数（本文$C=7$，对应7类活动）；</li>
+<li>$p(c)$：样本集$S$中类别$c$的占比（$p(c) = \frac{\text{类别}c\text{的样本数}}{|S|}$）。</li>
+</ul>
+<h6 id="2-信息增益（Gain）"><a href="#2-信息增益（Gain）" class="headerlink" title="2. 信息增益（Gain）"></a>2. 信息增益（Gain）</h6><p>以2类分割举例，分割后信息熵的降低量：</p>
+<script type="math/tex; mode=display">Gain(S, A, T) = Entropy(S) - \left( \frac{|S_1|}{|S|} Entropy(S_1) + \frac{|S_2|}{|S|} Entropy(S_2) \right)</script><ul>
+<li>$A$：目标连续特征（如$\sigma_y$）；</li>
+<li>$T$：候选分割点；</li>
+<li>$S_1$：$A &lt; T$ 的样本子集，$S_2$：$A ≥ T$ 的样本子集；</li>
+<li>$|S|、|S_1|、|S_2|$：对应样本集的样本数量。</li>
+</ul>
+<h6 id="3-分裂信息（SplitInfo）"><a href="#3-分裂信息（SplitInfo）" class="headerlink" title="3. 分裂信息（SplitInfo）"></a>3. 分裂信息（SplitInfo）</h6><p>修正特征分割的分布偏向：</p>
+<script type="math/tex; mode=display">SplitInfo(S, A, T) = -\sum_{i=1}^{2} \frac{|S_i|}{|S|} \log_2 \frac{|S_i|}{|S|}</script><h6 id="4-信息增益比（GainRatio）"><a href="#4-信息增益比（GainRatio）" class="headerlink" title="4. 信息增益比（GainRatio）"></a>4. 信息增益比（GainRatio）</h6><p>最终优化指标：</p>
+<script type="math/tex; mode=display">GainRatio(S, A, T) = \frac{Gain(S, A, T)}{SplitInfo(S, A, T)}</script><h3 id="速度估计"><a href="#速度估计" class="headerlink" title="速度估计"></a>速度估计</h3><p>多元线性回归模型，最小二乘法求解最终系数，方法和上一篇算ee的类似</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>模型类型</th>
+<th>核心自变量（筛选后）</th>
+<th>变量类型（时域 / 频域 / 身体特征）</th>
+<th>关键说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>步行速度模型（R²=96.3%）</td>
+<td>1. ln (σₓ)：垂直轴标准差的自然对数2. R_yz：中外侧轴（y）与前后轴（z）的轴间互相关3. 身高（H）4. aₓ：垂直轴加速度均值5. Jₓ：垂直轴频域熵</td>
+<td>1. 时域；2. 时域；3. 身体特征；4. 时域；5. 频域</td>
+<td>自变量解释力逐步提升，Jₓ最终将 R² 提升至 96.3%（表 3 中 Partial r² 逐步增大）</td>
+</tr>
+<tr>
+<td>跑步速度模型（R²=70.2%）</td>
+<td>1. a_z^pp：前后轴加速度峰峰值2. R_zn：前后轴（z）与垂直轴（x）的轴间互相关3. A_z：前后轴功率谱密度谱峰幅度4. A_y：中外侧轴功率谱密度谱峰幅度</td>
+<td>1. 时域；2. 时域；3. 频域；4. 频域</td>
+<td>以时域 + 频域特征为主，无身体特征（可能因跑步速度与身体特征相关性弱）</td>
+</tr>
+<tr>
+<td>骑行速度模型（R²=86.6%）</td>
+<td>1. σ_z：前后轴加速度标准差2. σₓ：垂直轴加速度标准差3. J_z：前后轴功率谱密度主频率</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h3><p>这篇论文主要讲了单传感器的活动分类方法，用的是决策树。</p>
+<p>把采集的总的数据分割为固定长度的片段，然后用每个片段计算标准差等各种指标。这些指标用来计算决策树各个节点的阈值。</p>
+<p>阈值的计算方法是c4.5算法，就是遍历计算各个分割的信息增益比，选择最小化信息增益比的那个分割的值作为判别的阈值。经过决策树的所有节点的判决，最后分类出结果。</p>
+<p>速度的估计就是<a href="#多元线性回归">多元线性回归</a>，系数用最小二乘法算，和上面算ee的类似。</p>
+<p><a href="https://www.doubao.com/thread/wbb7f2b2d7f8537a0">和豆包的讨论</a></p>
+<h2 id="Improving-assessment-of-daily-energy-expenditure-by-identifying-types-of-physical-activity-with-a-single-accelerometer"><a href="#Improving-assessment-of-daily-energy-expenditure-by-identifying-types-of-physical-activity-with-a-single-accelerometer" class="headerlink" title="Improving assessment of daily energy expenditure by identifying types of physical activity with a single accelerometer"></a>Improving assessment of daily energy expenditure by identifying types of physical activity with a single accelerometer</h2><p>这篇文章和<a href="#DTPA">决策树</a>分类活动的是同一个作者，用了活动分类来做能量计算。</p>
+<p>这篇文章的核心是<strong>用单台三轴加速度计 + 分类树模型识别 6 类日常身体活动，结合 MET（代谢当量）值计算日均代谢当量（MET_D）</strong>，最终显著提升了总能量消耗（TEE）、活动相关能量消耗（AEE）和身体活动水平（PAL）的估算精度</p>
+<h4 id="受试者与研究流程"><a href="#受试者与研究流程" class="headerlink" title="受试者与研究流程"></a>受试者与研究流程</h4><ul>
+<li>15 名健康成人（9 男 6 女），监测 5 天 PA（加速度计），同时用双标记水测量 2 周 TEE。</li>
+<li>加速度计佩戴于下背部，20Hz 采样，切分为 6.4 秒非重叠片段（平衡分类准确率和时间分辨率）</li>
+</ul>
+<h4 id="核心技术：活动识别-MET-D-计算"><a href="#核心技术：活动识别-MET-D-计算" class="headerlink" title="核心技术：活动识别 + MET_D 计算"></a>核心技术：活动识别 + MET_D 计算</h4><script type="math/tex; mode=display">
+MET_{D} = \frac{1}{k} \sum_{i=1}^{6} MET^{i} \times AD_{D}^{i}</script><p><strong>MET（代谢当量）</strong>：衡量活动强度的标准单位，1 MET = 安静坐姿下的代谢率（约 3.5 ml O₂・kg⁻¹・min⁻¹），数值越高强度越大（如躺 = 1 MET，跑步 = 11 MET）。</p>
+<p><strong>MET_D 的本质</strong>：不是单一活动的 MET 值，而是 “每日所有活动的强度 × 时长” 的综合体现，能客观反映个体一天的整体活动强度水平。</p>
+<h5 id="分类树模型：识别-6-类活动"><a href="#分类树模型：识别-6-类活动" class="headerlink" title="分类树模型：识别 6 类活动"></a>分类树模型：识别 6 类活动</h5><ul>
+<li>输入特征：三轴加速度的时域（均值、标准差、峰峰值）和频域（主频率）特征。</li>
+<li>分类目标：躺（Lie）、坐 / 站（Sit-Stand）、动态站立（AS，如洗碗）、步行（Walk）、跑步（Run）、骑行（Cycle）。</li>
+<li>模型性能：整体分类效果优异（表 1），其中 “躺”“跑步” 敏感性 100%，“步行” F 分数 99%，仅 “动态站立（AS）” 敏感性 69%（易与坐 / 站混淆）。</li>
+</ul>
+<h5 id="MET-D-计算：量化活动强度"><a href="#MET-D-计算：量化活动强度" class="headerlink" title="MET_D 计算：量化活动强度"></a>MET_D 计算：量化活动强度</h5><ul>
+<li>逻辑：以 “活动持续时间” 为权重，结合每类活动的标准 MET 值（来自 PA 代谢当量手册），计算日均加权 MET 值。</li>
+<li>关键：步行、跑步、骑行的 MET 值根据实测平均速度匹配（如步行 4.2km/h 对应 MET=3，跑步 10.6km/h 对应 MET=11）。</li>
+</ul>
+<h3 id="总结-2"><a href="#总结-2" class="headerlink" title="总结"></a>总结</h3><p>这篇就是一个简单的加权求和，算每种活动的持续时间，然后用持续时间乘以这种活动的单位时长平均消耗的能量来计算一种活动的MET，最后加起来算一天的$MET_D$，最后用这个$MET_D$结合BMI、体重等参数，构建回归模型来算最终的能量消耗</p>
+<p>单位时长平均消耗的能量是 Ainsworth 等发布的《身体活动代谢当量手册》给出的</p>
+<h2 id="Activity-recognition-using-a-single-accelerometer-placed-at-the-wrist-or-ankle"><a href="#Activity-recognition-using-a-single-accelerometer-placed-at-the-wrist-or-ankle" class="headerlink" title="Activity recognition using a single accelerometer placed at the wrist or ankle"></a>Activity recognition using a single accelerometer placed at the wrist or ankle</h2><p>SVM（支持向量机）做活动识别</p>
+<h2 id="一、分类器选择与配置"><a href="#一、分类器选择与配置" class="headerlink" title="一、分类器选择与配置"></a>一、分类器选择与配置</h2><p>研究最终选定<strong>支持向量机（SVM）</strong> 作为核心分类器，具体配置和选择依据如下：</p>
+<h3 id="1-分类器选择依据"><a href="#1-分类器选择依据" class="headerlink" title="1. 分类器选择依据"></a>1. 分类器选择依据</h3><p>文档明确提到 “SVM 分类器是理想选择”，核心原因有两点：</p>
+<ul>
+<li><strong>优化特性</strong>：SVM 的优化准则是<strong>凸优化</strong>，意味着训练过程中不会陷入局部最优解，能找到全局唯一最优解，结果稳定性更强；</li>
+<li><strong>工程实用性</strong>：存在成熟的开源工具包（本研究使用 LibSVM 工具包），无需从零实现，且适配小样本、高维特征（如本研究的时频特征、统计特征组合）的分类场景。</li>
+</ul>
+<h3 id="2-关键配置参数"><a href="#2-关键配置参数" class="headerlink" title="2. 关键配置参数"></a>2. 关键配置参数</h3><p>为了达到最优分类效果，研究通过预实验确定了 SVM 的核心参数：</p>
+<ul>
+<li><strong>核函数</strong>：采用「径向基函数（RBF）核」，适合处理非线性数据（加速度计信号的时频特征与活动类型间存在非线性关联）；</li>
+<li>超参数<ul>
+<li>复杂度惩罚项 <em>C</em>=100（控制模型对训练数据的拟合程度，避免过拟合）；</li>
+<li>核函数参数 <em>γ</em>=0.1（控制 RBF 核的 “影响范围”，平衡模型的泛化能力和拟合精度）。</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-分类流程"><a href="#3-分类流程" class="headerlink" title="3. 分类流程"></a>3. 分类流程</h3><ol>
+<li>对预处理后的加速度计数据（信号幅值向量 SMV），按指定窗口长度（2s/4s/12.8s）分割为独立样本；</li>
+<li>对每个窗口提取特征（如时频分析特征、统计特征），形成特征向量；</li>
+<li>将特征向量输入训练好的 SVM 模型，输出该窗口对应的活动类别（ambulation/cycling/sedentary/other）。</li>
+</ol>
+<h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ol>
+<li>Valanou E M, Bamia C, Trichopoulou A. Methodology of physical-activity and energy-expenditure assessment: a review[J]. Journal of Public Health, 2006, 14(2): 58-65.</li>
+<li>Hills A P, Mokhtar N, Byrne N M. Assessment of physical activity and energy expenditure: an overview of objective measures[J]. Frontiers in nutrition, 2014, 1: 5.</li>
+<li>Brage S, Brage N, Franks P W, et al. Branched equation modeling of simultaneous accelerometry and heart rate monitoring improves estimate of directly measured physical activity energy expenditure[J]. Journal of applied physiology, 2004.</li>
+<li>Bonomi A, Goris A H, Yin B, et al. Detection of type, duration, and intensity of physical activity using an accelerometer[J]. Medicine and science in sports and exercise, 2009, 41(9): 1770-7.</li>
+<li>Bonomi A G, Plasqui G, Goris A H C, et al. Improving assessment of daily energy expenditure by identifying types of physical activity with a single accelerometer[J]. Journal of applied physiology, 2009, 107(3): 655-661.</li>
+<li>Mannini A, Intille S S, Rosenberger M, et al. Activity recognition using a single accelerometer placed at the wrist or ankle[J]. Medicine and science in sports and exercise, 2013, 45(11): 2193.</li>
+</ol>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+        <tag>读研</tag>
+        <tag>代谢计算</tag>
+        <tag>神经网络</tag>
+        <tag>生物信息</tag>
+      </tags>
+  </entry>
 </search>
